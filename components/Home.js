@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import {LinearGradient} from 'expo-linear-gradient';
 
 const NavigateToDetails = props => {
-    props.navigation.navigate('Register');
+    props.navigation.navigate('Lead');
 }
 
 const Home = props => {
@@ -17,10 +17,11 @@ const Home = props => {
         start={{x: 2, y:0.5}}
        >
         <View style={{ flex: 1, justifyContent: 'center' }}>
-          <Text style={styles.textFirst}>Learn Coding App</Text>
-          <Image source={{uri: 'https://theedvolution.com/wp-content/uploads/2020/10/best-coding-website-for-kids-500x250.png'}}
-                               style={{width: 400,
-                                       height: 200,
+          <Text style={styles.textFirst}>    Learn Coding App</Text>
+          <Image source={require("../assets/one.jpg")}
+                               style={{width: 300,
+                                       height: 300,
+                                       alignItems: 'center',
                                        marginTop:25,
                                        borderBottomLeftRadius:50,
                                        borderTopRightRadius:50}} />
@@ -45,16 +46,17 @@ const Home = props => {
     },
 
     textFirst: {
+      marginTop: 140,
       fontSize: 30,
       fontWeight: '500',
     },
 
     button: {
-      alignItems: 'center',
+      alignItems: 'flex-end',
       justifyContent: 'center',
       paddingVertical: 12,
       marginTop: 10,
-      marginBottom: 20,
+      marginBottom: 0,
       width:200,
       paddingHorizontal: 32,
       borderRadius: 4,
